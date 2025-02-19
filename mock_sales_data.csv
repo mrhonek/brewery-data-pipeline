@@ -1,0 +1,369 @@
+date,product,region,units_sold,price_per_unit
+2024-01-01,IPA,West Coast,3231,11.46
+2024-01-01,Pale Ale,Midwest,1034,10.05
+2024-01-01,Stout,South,2261,7.39
+2024-01-01,Pilsner,South,1916,7.68
+2024-01-01,Lager,South,2594,10.59
+2024-01-01,Porter,Midwest,694,6.89
+2024-01-01,Sour,South,4913,10.68
+2024-01-01,Hefeweizen,International,4717,5.54
+2024-01-02,IPA,South,2198,7.59
+2024-01-02,Pale Ale,West Coast,4590,5.73
+2024-01-02,Stout,South,3053,7.09
+2024-01-02,Pilsner,International,3953,7.36
+2024-01-02,Lager,South,894,5.22
+2024-01-02,Porter,International,3082,10.55
+2024-01-02,Sour,East Coast,2845,5.07
+2024-01-02,Hefeweizen,West Coast,3555,11.7
+2024-01-03,IPA,East Coast,791,10.64
+2024-01-03,Pale Ale,West Coast,4824,7.02
+2024-01-03,Stout,South,1516,6.18
+2024-01-03,Pilsner,International,4021,5.53
+2024-01-03,Lager,International,1207,7.58
+2024-01-03,Porter,West Coast,3817,10.51
+2024-01-03,Sour,International,2301,9.65
+2024-01-03,Hefeweizen,Midwest,3732,8.79
+2024-01-04,IPA,Midwest,4838,8.31
+2024-01-04,Pale Ale,East Coast,911,5.17
+2024-01-04,Stout,International,2722,8.33
+2024-01-04,Pilsner,Midwest,1655,7.87
+2024-01-04,Lager,South,1831,6.75
+2024-01-04,Porter,International,2439,11.18
+2024-01-04,Sour,East Coast,1180,6.1
+2024-01-04,Hefeweizen,Midwest,3796,10.03
+2024-01-05,IPA,Midwest,3913,5.22
+2024-01-05,Pale Ale,Midwest,1007,5.07
+2024-01-05,Stout,West Coast,2022,6.68
+2024-01-05,Pilsner,West Coast,2934,11.24
+2024-01-05,Lager,South,3952,8.86
+2024-01-05,Porter,South,2562,9.49
+2024-01-05,Sour,West Coast,1496,9.41
+2024-01-05,Hefeweizen,International,2619,5.02
+2024-01-06,IPA,Midwest,3046,10.79
+2024-01-06,Pale Ale,East Coast,2039,5.08
+2024-01-06,Stout,South,4646,11.67
+2024-01-06,Pilsner,International,2597,11.18
+2024-01-06,Lager,West Coast,3801,6.88
+2024-01-06,Porter,Midwest,3688,7.67
+2024-01-06,Sour,East Coast,1203,10.57
+2024-01-06,Hefeweizen,International,4659,5.25
+2024-01-07,IPA,International,2492,8.84
+2024-01-07,Pale Ale,South,843,10.97
+2024-01-07,Stout,West Coast,1158,5.67
+2024-01-07,Pilsner,East Coast,3742,7.37
+2024-01-07,Lager,International,3842,5.02
+2024-01-07,Porter,Midwest,754,11.22
+2024-01-07,Sour,East Coast,3466,9.87
+2024-01-07,Hefeweizen,West Coast,1849,7.96
+2024-01-08,IPA,West Coast,4414,7.79
+2024-01-08,Pale Ale,East Coast,1431,10.02
+2024-01-08,Stout,Midwest,2150,5.91
+2024-01-08,Pilsner,Midwest,2553,8.48
+2024-01-08,Lager,International,751,5.92
+2024-01-08,Porter,East Coast,736,11.92
+2024-01-08,Sour,International,1369,6.17
+2024-01-08,Hefeweizen,South,2805,7.5
+2024-01-09,IPA,International,2470,10.94
+2024-01-09,Pale Ale,West Coast,3408,11.19
+2024-01-09,Stout,International,1609,7.8
+2024-01-09,Pilsner,West Coast,4329,7.63
+2024-01-09,Lager,Midwest,2528,11.09
+2024-01-09,Porter,East Coast,4658,11.34
+2024-01-09,Sour,West Coast,1747,10.99
+2024-01-09,Hefeweizen,South,2740,9.01
+2024-01-10,IPA,South,4954,9.75
+2024-01-10,Pale Ale,Midwest,3415,7.26
+2024-01-10,Stout,Midwest,4413,10.23
+2024-01-10,Pilsner,West Coast,4266,10.51
+2024-01-10,Lager,West Coast,4716,9.17
+2024-01-10,Porter,Midwest,541,9.38
+2024-01-10,Sour,West Coast,2908,8.6
+2024-01-10,Hefeweizen,International,3358,10.37
+2024-01-11,IPA,International,1182,11.93
+2024-01-11,Pale Ale,South,734,8.98
+2024-01-11,Stout,Midwest,2910,6.02
+2024-01-11,Pilsner,East Coast,3196,7.84
+2024-01-11,Lager,South,1395,10.51
+2024-01-11,Porter,East Coast,3966,7.78
+2024-01-11,Sour,Midwest,2456,8.9
+2024-01-11,Hefeweizen,West Coast,2226,9.73
+2024-01-12,IPA,West Coast,1416,5.05
+2024-01-12,Pale Ale,South,4447,8.75
+2024-01-12,Stout,West Coast,3290,6.36
+2024-01-12,Pilsner,West Coast,2014,9.5
+2024-01-12,Lager,Midwest,3997,5.54
+2024-01-12,Porter,West Coast,2886,7.22
+2024-01-12,Sour,East Coast,1313,6.64
+2024-01-12,Hefeweizen,International,2255,6.58
+2024-01-13,IPA,Midwest,4703,7.73
+2024-01-13,Pale Ale,Midwest,4225,9.85
+2024-01-13,Stout,South,4181,7.33
+2024-01-13,Pilsner,East Coast,1774,7.0
+2024-01-13,Lager,South,2369,10.99
+2024-01-13,Porter,International,1907,11.87
+2024-01-13,Sour,South,908,5.51
+2024-01-13,Hefeweizen,Midwest,3044,5.71
+2024-01-14,IPA,West Coast,4446,6.3
+2024-01-14,Pale Ale,West Coast,2935,7.07
+2024-01-14,Stout,West Coast,3179,8.57
+2024-01-14,Pilsner,Midwest,4968,5.63
+2024-01-14,Lager,West Coast,732,5.74
+2024-01-14,Porter,Midwest,4468,7.88
+2024-01-14,Sour,Midwest,2821,5.07
+2024-01-14,Hefeweizen,West Coast,2934,8.18
+2024-01-15,IPA,International,848,10.99
+2024-01-15,Pale Ale,East Coast,4428,9.49
+2024-01-15,Stout,East Coast,3207,10.44
+2024-01-15,Pilsner,East Coast,2547,7.19
+2024-01-15,Lager,East Coast,1140,11.11
+2024-01-15,Porter,East Coast,4748,9.13
+2024-01-15,Sour,West Coast,1427,6.34
+2024-01-15,Hefeweizen,South,2609,8.46
+2024-01-16,IPA,South,2120,5.66
+2024-01-16,Pale Ale,South,1923,8.01
+2024-01-16,Stout,International,913,5.74
+2024-01-16,Pilsner,West Coast,2305,5.2
+2024-01-16,Lager,International,4006,9.3
+2024-01-16,Porter,East Coast,2479,8.01
+2024-01-16,Sour,South,1848,10.24
+2024-01-16,Hefeweizen,International,2172,9.42
+2024-01-17,IPA,East Coast,1208,10.2
+2024-01-17,Pale Ale,South,3566,10.47
+2024-01-17,Stout,West Coast,3936,10.82
+2024-01-17,Pilsner,Midwest,1140,11.72
+2024-01-17,Lager,West Coast,3803,6.23
+2024-01-17,Porter,West Coast,4669,7.43
+2024-01-17,Sour,West Coast,3067,10.99
+2024-01-17,Hefeweizen,West Coast,4913,8.04
+2024-01-18,IPA,International,1727,5.92
+2024-01-18,Pale Ale,International,3219,5.51
+2024-01-18,Stout,Midwest,1357,7.22
+2024-01-18,Pilsner,West Coast,4027,9.01
+2024-01-18,Lager,Midwest,3347,6.75
+2024-01-18,Porter,East Coast,2801,6.85
+2024-01-18,Sour,Midwest,1710,7.88
+2024-01-18,Hefeweizen,International,2583,9.12
+2024-01-19,IPA,West Coast,4455,10.08
+2024-01-19,Pale Ale,West Coast,4852,9.5
+2024-01-19,Stout,South,3747,7.36
+2024-01-19,Pilsner,International,1393,9.99
+2024-01-19,Lager,Midwest,1642,10.75
+2024-01-19,Porter,East Coast,3348,7.91
+2024-01-19,Sour,South,3841,5.71
+2024-01-19,Hefeweizen,South,4363,9.88
+2024-01-20,IPA,International,3987,6.95
+2024-01-20,Pale Ale,International,1970,7.7
+2024-01-20,Stout,Midwest,1405,7.06
+2024-01-20,Pilsner,South,4047,11.88
+2024-01-20,Lager,East Coast,1937,6.96
+2024-01-20,Porter,Midwest,2569,6.86
+2024-01-20,Sour,International,2856,11.67
+2024-01-20,Hefeweizen,Midwest,1419,6.39
+2024-01-21,IPA,International,3048,6.0
+2024-01-21,Pale Ale,International,3469,9.58
+2024-01-21,Stout,Midwest,2365,9.62
+2024-01-21,Pilsner,East Coast,790,9.68
+2024-01-21,Lager,South,2808,8.17
+2024-01-21,Porter,International,2136,5.46
+2024-01-21,Sour,International,4823,8.84
+2024-01-21,Hefeweizen,Midwest,1309,10.55
+2024-01-22,IPA,East Coast,1727,5.11
+2024-01-22,Pale Ale,Midwest,952,11.18
+2024-01-22,Stout,Midwest,1915,9.32
+2024-01-22,Pilsner,East Coast,3379,7.69
+2024-01-22,Lager,West Coast,598,11.23
+2024-01-22,Porter,Midwest,2316,5.13
+2024-01-22,Sour,International,643,5.17
+2024-01-22,Hefeweizen,West Coast,1811,7.63
+2024-01-23,IPA,East Coast,869,11.02
+2024-01-23,Pale Ale,Midwest,4645,7.2
+2024-01-23,Stout,Midwest,3399,10.64
+2024-01-23,Pilsner,Midwest,2210,10.59
+2024-01-23,Lager,Midwest,662,6.2
+2024-01-23,Porter,South,2387,10.64
+2024-01-23,Sour,West Coast,863,11.23
+2024-01-23,Hefeweizen,South,3795,11.9
+2024-01-24,IPA,West Coast,1801,5.36
+2024-01-24,Pale Ale,East Coast,3245,8.73
+2024-01-24,Stout,East Coast,2219,6.64
+2024-01-24,Pilsner,East Coast,3636,7.31
+2024-01-24,Lager,Midwest,3858,9.88
+2024-01-24,Porter,International,2052,9.55
+2024-01-24,Sour,Midwest,2497,5.96
+2024-01-24,Hefeweizen,South,4369,9.84
+2024-01-25,IPA,East Coast,3993,5.65
+2024-01-25,Pale Ale,South,3221,11.14
+2024-01-25,Stout,West Coast,4055,7.44
+2024-01-25,Pilsner,International,4797,11.37
+2024-01-25,Lager,Midwest,963,7.05
+2024-01-25,Porter,East Coast,4405,11.13
+2024-01-25,Sour,East Coast,1572,5.58
+2024-01-25,Hefeweizen,Midwest,1282,7.24
+2024-01-26,IPA,Midwest,3599,11.39
+2024-01-26,Pale Ale,South,1490,11.02
+2024-01-26,Stout,East Coast,1472,7.67
+2024-01-26,Pilsner,International,4957,6.02
+2024-01-26,Lager,West Coast,3307,7.89
+2024-01-26,Porter,West Coast,4555,5.84
+2024-01-26,Sour,Midwest,4559,10.65
+2024-01-26,Hefeweizen,International,4058,10.92
+2024-01-27,IPA,East Coast,1342,9.55
+2024-01-27,Pale Ale,West Coast,3685,6.35
+2024-01-27,Stout,South,3930,10.85
+2024-01-27,Pilsner,International,3927,11.8
+2024-01-27,Lager,International,4684,9.09
+2024-01-27,Porter,West Coast,3271,7.28
+2024-01-27,Sour,Midwest,4563,8.78
+2024-01-27,Hefeweizen,South,3990,5.16
+2024-01-28,IPA,International,1354,9.06
+2024-01-28,Pale Ale,West Coast,1501,8.76
+2024-01-28,Stout,Midwest,1410,6.41
+2024-01-28,Pilsner,International,3639,7.09
+2024-01-28,Lager,International,1245,11.44
+2024-01-28,Porter,International,2404,7.9
+2024-01-28,Sour,West Coast,4232,11.77
+2024-01-28,Hefeweizen,Midwest,963,9.54
+2024-01-29,IPA,International,4605,11.38
+2024-01-29,Pale Ale,South,4430,5.82
+2024-01-29,Stout,West Coast,4718,10.27
+2024-01-29,Pilsner,East Coast,3390,8.78
+2024-01-29,Lager,International,3529,11.6
+2024-01-29,Porter,East Coast,1581,8.43
+2024-01-29,Sour,Midwest,4240,8.13
+2024-01-29,Hefeweizen,South,3958,10.98
+2024-01-30,IPA,Midwest,976,11.21
+2024-01-30,Pale Ale,East Coast,1793,10.43
+2024-01-30,Stout,South,903,10.73
+2024-01-30,Pilsner,East Coast,4124,9.11
+2024-01-30,Lager,International,3123,7.14
+2024-01-30,Porter,South,3167,11.66
+2024-01-30,Sour,East Coast,897,7.91
+2024-01-30,Hefeweizen,South,4858,9.55
+2024-01-31,IPA,South,2497,5.43
+2024-01-31,Pale Ale,West Coast,3837,8.27
+2024-01-31,Stout,International,2133,10.08
+2024-01-31,Pilsner,Midwest,588,5.84
+2024-01-31,Lager,West Coast,4381,6.03
+2024-01-31,Porter,South,4875,9.12
+2024-01-31,Sour,South,1627,6.21
+2024-01-31,Hefeweizen,East Coast,1022,8.07
+2024-02-01,IPA,East Coast,3938,5.86
+2024-02-01,Pale Ale,International,2040,9.33
+2024-02-01,Stout,South,2871,6.24
+2024-02-01,Pilsner,Midwest,4680,11.75
+2024-02-01,Lager,International,2920,5.72
+2024-02-01,Porter,International,2820,8.84
+2024-02-01,Sour,West Coast,3797,7.81
+2024-02-01,Hefeweizen,West Coast,1702,9.57
+2024-02-02,IPA,East Coast,4815,6.78
+2024-02-02,Pale Ale,East Coast,1955,8.69
+2024-02-02,Stout,East Coast,4664,6.07
+2024-02-02,Pilsner,East Coast,1387,11.38
+2024-02-02,Lager,East Coast,3576,9.49
+2024-02-02,Porter,West Coast,3782,8.69
+2024-02-02,Sour,South,4381,8.64
+2024-02-02,Hefeweizen,Midwest,941,9.22
+2024-02-03,IPA,East Coast,3899,5.88
+2024-02-03,Pale Ale,South,2701,9.4
+2024-02-03,Stout,International,621,8.6
+2024-02-03,Pilsner,West Coast,709,11.23
+2024-02-03,Lager,West Coast,4311,9.68
+2024-02-03,Porter,South,3265,5.42
+2024-02-03,Sour,South,4994,5.52
+2024-02-03,Hefeweizen,East Coast,4749,7.74
+2024-02-04,IPA,West Coast,684,7.06
+2024-02-04,Pale Ale,East Coast,3417,10.05
+2024-02-04,Stout,International,906,11.75
+2024-02-04,Pilsner,International,4840,5.82
+2024-02-04,Lager,South,1299,10.89
+2024-02-04,Porter,South,2638,5.11
+2024-02-04,Sour,West Coast,1875,10.06
+2024-02-04,Hefeweizen,Midwest,697,6.64
+2024-02-05,IPA,East Coast,4912,6.93
+2024-02-05,Pale Ale,West Coast,4316,10.57
+2024-02-05,Stout,West Coast,2625,6.45
+2024-02-05,Pilsner,Midwest,3432,10.38
+2024-02-05,Lager,South,3751,7.77
+2024-02-05,Porter,Midwest,4206,10.98
+2024-02-05,Sour,South,3233,11.0
+2024-02-05,Hefeweizen,West Coast,994,10.53
+2024-02-06,IPA,East Coast,968,11.82
+2024-02-06,Pale Ale,Midwest,1005,11.38
+2024-02-06,Stout,East Coast,3341,10.77
+2024-02-06,Pilsner,International,4160,7.7
+2024-02-06,Lager,East Coast,1568,6.09
+2024-02-06,Porter,International,4767,5.99
+2024-02-06,Sour,South,3218,11.66
+2024-02-06,Hefeweizen,Midwest,4119,5.23
+2024-02-07,IPA,International,736,7.72
+2024-02-07,Pale Ale,Midwest,2988,8.77
+2024-02-07,Stout,South,1675,10.89
+2024-02-07,Pilsner,East Coast,4591,5.46
+2024-02-07,Lager,West Coast,644,10.14
+2024-02-07,Porter,East Coast,3382,8.27
+2024-02-07,Sour,South,4040,11.37
+2024-02-07,Hefeweizen,East Coast,2877,9.01
+2024-02-08,IPA,East Coast,1128,6.59
+2024-02-08,Pale Ale,East Coast,4202,8.3
+2024-02-08,Stout,East Coast,1514,11.92
+2024-02-08,Pilsner,Midwest,4570,6.85
+2024-02-08,Lager,West Coast,3175,8.28
+2024-02-08,Porter,East Coast,1874,10.18
+2024-02-08,Sour,South,4634,5.66
+2024-02-08,Hefeweizen,International,4254,11.23
+2024-02-09,IPA,International,4896,9.19
+2024-02-09,Pale Ale,East Coast,1422,9.14
+2024-02-09,Stout,East Coast,4349,11.47
+2024-02-09,Pilsner,West Coast,701,9.4
+2024-02-09,Lager,International,2354,11.85
+2024-02-09,Porter,East Coast,1968,11.86
+2024-02-09,Sour,International,1474,10.8
+2024-02-09,Hefeweizen,East Coast,4925,10.59
+2024-02-10,IPA,East Coast,888,5.88
+2024-02-10,Pale Ale,East Coast,4415,11.56
+2024-02-10,Stout,South,4887,5.83
+2024-02-10,Pilsner,South,4178,5.03
+2024-02-10,Lager,International,1268,6.34
+2024-02-10,Porter,East Coast,3195,11.15
+2024-02-10,Sour,West Coast,3333,6.44
+2024-02-10,Hefeweizen,International,1693,8.6
+2024-02-11,IPA,International,2570,5.73
+2024-02-11,Pale Ale,East Coast,2825,9.09
+2024-02-11,Stout,International,4206,11.62
+2024-02-11,Pilsner,South,2162,7.98
+2024-02-11,Lager,International,2322,7.68
+2024-02-11,Porter,East Coast,1073,10.58
+2024-02-11,Sour,East Coast,1498,8.27
+2024-02-11,Hefeweizen,East Coast,4955,6.05
+2024-02-12,IPA,West Coast,525,7.73
+2024-02-12,Pale Ale,Midwest,1193,7.45
+2024-02-12,Stout,International,2457,8.2
+2024-02-12,Pilsner,South,1426,10.23
+2024-02-12,Lager,East Coast,2098,11.02
+2024-02-12,Porter,International,2446,6.2
+2024-02-12,Sour,Midwest,2555,10.11
+2024-02-12,Hefeweizen,East Coast,1615,11.56
+2024-02-13,IPA,International,4405,7.86
+2024-02-13,Pale Ale,East Coast,3468,8.44
+2024-02-13,Stout,West Coast,2210,8.6
+2024-02-13,Pilsner,East Coast,3333,11.75
+2024-02-13,Lager,West Coast,2241,9.96
+2024-02-13,Porter,East Coast,3295,9.9
+2024-02-13,Sour,South,2578,7.06
+2024-02-13,Hefeweizen,West Coast,1616,8.85
+2024-02-14,IPA,International,1580,8.69
+2024-02-14,Pale Ale,Midwest,2601,7.27
+2024-02-14,Stout,Midwest,4496,7.32
+2024-02-14,Pilsner,South,4019,8.62
+2024-02-14,Lager,Midwest,795,10.46
+2024-02-14,Porter,East Coast,2655,11.7
+2024-02-14,Sour,East Coast,3528,11.24
+2024-02-14,Hefeweizen,International,1543,8.37
+2024-02-15,IPA,West Coast,3605,6.11
+2024-02-15,Pale Ale,Midwest,2819,10.53
+2024-02-15,Stout,Midwest,4594,6.25
+2024-02-15,Pilsner,South,1835,7.08
+2024-02-15,Lager,Midwest,4964,7.67
+2024-02-15,Porter,South,1451,10.56
+2024-02-15,Sour,East Coast,3858,8.58
+2024-02-15,Hefeweizen,West Coast,4771,8.92
