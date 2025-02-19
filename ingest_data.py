@@ -1,11 +1,26 @@
+import time
 import pandas as pd
 from sqlalchemy import create_engine
+from sqlalchemy.exc import OperationalError
 
 # Railway PostgreSQL connection string
-DATABASE_URL = "postgresql://postgres:mcJRZJIrRCCMwwXDrRADmBMsyiGRVkRH@postgres.railway.internal:5432/railway"
+DATABASE_URL = "postgresql://postgres:***REMOVED***@postgres.railway.internal:5432/railway?sslmode=require"
 
-# Create database connection
-engine = create_engine(DATABASE_URL)
+# Create database connection and retry connecting if not successful
+MAX_RETRIES = 3
+for attempt in range(MAX_RETRIES):
+    try:
+        engine = create_engine(DATABASE_URL, pool_pre_ping=True)
+        with engine.connect() as connection:
+            print("✅ Connected to PostgreSQL on Railway!")
+        break  # Connection successful
+    except OperationalError as e:
+        print(f"⚠️ Database connection failed (Attempt {attempt + 1}/{MAX_RETRIES})")
+        print(f"Error: {e}")
+        time.sleep(5)  # Wait before retrying
+else:
+    print("❌ Failed to connect after multiple attempts. Exiting.")
+    exit(1)
 
 # Create Tables if not exist
 with engine.connect() as connection:
