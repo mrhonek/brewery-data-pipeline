@@ -5,7 +5,7 @@ from sqlalchemy.exc import OperationalError
 from sqlalchemy.sql import text  # Import text() for raw SQL queries
 
 # Use Railway PostgreSQL URL with SSL enabled
-DATABASE_URL = "<YOUR_POSTGRES_URL>?sslmode=require"
+DATABASE_URL = "***REMOVED***?sslmode=require"
 
 # Retry connecting to the database
 MAX_RETRIES = 3
