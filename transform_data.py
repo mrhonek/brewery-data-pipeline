@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.exc import OperationalError
 
 # Use Railway PostgreSQL URL with SSL enabled
-DATABASE_URL = "postgresql://postgres:***REMOVED***@postgres.railway.internal:5432/railway?sslmode=require"
+DATABASE_URL = "***REMOVED***?sslmode=require"
 
 # Retry connecting to the database
 MAX_RETRIES = 3
