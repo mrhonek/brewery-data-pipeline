@@ -25,13 +25,15 @@ else:
 from sqlalchemy.sql import text  # Import text function from sqlalchemy.sql
 
 # Check if tables exist before querying
-check_tables_query = """
+check_tables_query = text("""
     SELECT tablename FROM pg_tables WHERE schemaname = 'public';
-"""
+""")
 
 with engine.connect() as connection:
-    existing_tables = [row[0] for row in connection.execute(check_tables_query)]
-    print(f"📊 Existing Tables: {existing_tables}")
+    result = connection.execute(check_tables_query)
+    existing_tables = [row[0] for row in result.fetchall()]  # Fetch results correctly
+
+print(f"📊 Existing Tables: {existing_tables}")
 
 if "sales_data" not in existing_tables or "production_data" not in existing_tables:
     print("❌ Tables do not exist! Run ingest_data.py first.")
