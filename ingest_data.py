@@ -2,11 +2,12 @@ import time
 import pandas as pd
 from sqlalchemy import create_engine
 from sqlalchemy.exc import OperationalError
+from sqlalchemy.sql import text  # Import text() for raw SQL queries
 
-# Railway PostgreSQL connection string
-DATABASE_URL = "***REMOVED***?sslmode=require"
+# Use Railway PostgreSQL URL with SSL enabled
+DATABASE_URL = "<YOUR_POSTGRES_URL>?sslmode=require"
 
-# Create database connection and retry connecting if not successful
+# Retry connecting to the database
 MAX_RETRIES = 3
 for attempt in range(MAX_RETRIES):
     try:
@@ -22,9 +23,9 @@ else:
     print("❌ Failed to connect after multiple attempts. Exiting.")
     exit(1)
 
-# Create Tables if not exist
+# Create Tables (Fix using text())
 with engine.connect() as connection:
-    connection.execute("""
+    connection.execute(text("""
         CREATE TABLE IF NOT EXISTS sales_data (
             id SERIAL PRIMARY KEY,
             date DATE,
@@ -33,9 +34,9 @@ with engine.connect() as connection:
             units_sold INT,
             price_per_unit DECIMAL(5,2)
         );
-    """)
+    """))
 
-    connection.execute("""
+    connection.execute(text("""
         CREATE TABLE IF NOT EXISTS production_data (
             id SERIAL PRIMARY KEY,
             date DATE,
@@ -44,7 +45,7 @@ with engine.connect() as connection:
             spoiled_units INT,
             cost_per_unit DECIMAL(5,2)
         );
-    """)
+    """))
 
 print("✅ Tables created successfully.")
 
@@ -57,3 +58,11 @@ sales_df.to_sql("sales_data", engine, if_exists="append", index=False)
 production_df.to_sql("production_data", engine, if_exists="append", index=False)
 
 print("✅ Data successfully loaded into PostgreSQL.")
+
+# Verify Row Count
+with engine.connect() as connection:
+    sales_count = connection.execute(text("SELECT COUNT(*) FROM sales_data;")).fetchone()[0]
+    production_count = connection.execute(text("SELECT COUNT(*) FROM production_data;")).fetchone()[0]
+
+print(f"📊 Total Sales Rows: {sales_count}")
+print(f"📊 Total Production Rows: {production_count}")
