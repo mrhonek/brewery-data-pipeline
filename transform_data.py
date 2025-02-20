@@ -60,7 +60,10 @@ production_summary = production_df.groupby("product").agg(
     avg_efficiency=("efficiency", "mean")
 ).reset_index()
 
-profitability_df = sales_summary.merge(production_summary, on="product", how="left")
+# Make sure cost_per_unit is numeric (remove "$" if present)
+production_df["cost_per_unit"] = production_df["cost_per_unit"].astype(str).str.replace("$", "").astype(float)
+
+# Compute Profitability
 profitability_df["total_cost"] = profitability_df["total_units_produced"] * production_df["cost_per_unit"].mean()
 profitability_df["profit"] = profitability_df["total_revenue"] - profitability_df["total_cost"]
 
