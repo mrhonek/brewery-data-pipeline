@@ -4,6 +4,16 @@ from sqlalchemy import create_engine
 from dotenv import load_dotenv
 import os
 
+st.set_page_config(page_title="Brewery Dashboard", layout="wide")
+
+# Set the correct port for Railway
+port = int(os.getenv("PORT", 5000))  # Use Railway's provided port or default to 5000
+
+# Run Streamlit
+if __name__ == "__main__":
+    st.write("✅ Connected to Database!")
+    st.write("🍺 Brewery Dashboard is running!")
+
 # Load environment variables
 load_dotenv()
 DATABASE_URL = os.getenv("DATABASE_URL")
