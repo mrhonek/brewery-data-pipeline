@@ -66,8 +66,11 @@ production_df["cost_per_unit"] = production_df["cost_per_unit"].astype(str).str.
 # Merge sales and production summaries to create `profitability_df`
 profitability_df = sales_summary.merge(production_summary, on="product", how="left")
 
+# Ensure numerical columns are floats (convert strings if necessary)
+profitability_df["total_revenue"] = profitability_df["total_revenue"].astype(str).str.replace("$", "").astype(float)
+profitability_df["total_cost"] = profitability_df["total_cost"].astype(str).str.replace("$", "").astype(float)
+
 # Compute Profitability
-profitability_df["total_cost"] = profitability_df["total_units_produced"] * production_df["cost_per_unit"].mean()
 profitability_df["profit"] = profitability_df["total_revenue"] - profitability_df["total_cost"]
 
 # Store transformed data in PostgreSQL
