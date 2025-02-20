@@ -22,6 +22,8 @@ else:
     print("❌ Failed to connect after multiple attempts. Exiting.")
     exit(1)
 
+from sqlalchemy.sql import text  # Import text function from sqlalchemy.sql
+
 # Check if tables exist before querying
 check_tables_query = """
     SELECT tablename FROM pg_tables WHERE schemaname = 'public';
