@@ -60,18 +60,27 @@ production_summary = production_df.groupby("product").agg(
     avg_efficiency=("efficiency", "mean")
 ).reset_index()
 
-# Make sure cost_per_unit is numeric (remove "$" if present)
-production_df["cost_per_unit"] = production_df["cost_per_unit"].astype(str).str.replace("$", "").astype(float)
+# Ensure cost_per_unit is numeric (remove "$" if present)
+production_df["cost_per_unit"] = pd.to_numeric(production_df["cost_per_unit"].astype(str).str.replace("$", ""), errors="coerce")
 
-# Merge sales and production summaries to create `profitability_df`
+# Ensure `sales_summary` and `production_summary` numeric columns are properly formatted
+sales_summary["total_revenue"] = pd.to_numeric(sales_summary["total_revenue"], errors="coerce")
+production_summary["total_units_produced"] = pd.to_numeric(production_summary["total_units_produced"], errors="coerce")
+production_summary["avg_efficiency"] = pd.to_numeric(production_summary["avg_efficiency"], errors="coerce")
+
+# Merge sales and production summaries
 profitability_df = sales_summary.merge(production_summary, on="product", how="left")
 
-# Ensure numerical columns are floats (convert strings if necessary)
-profitability_df["total_revenue"] = profitability_df["total_revenue"].astype(str).str.replace("$", "").astype(float)
-profitability_df["total_cost"] = profitability_df["total_cost"].astype(str).str.replace("$", "").astype(float)
+# Ensure `profitability_df` numerical columns are properly formatted
+profitability_df["total_revenue"] = pd.to_numeric(profitability_df["total_revenue"], errors="coerce")
+profitability_df["total_units_produced"] = pd.to_numeric(profitability_df["total_units_produced"], errors="coerce")
 
 # Compute Profitability
+profitability_df["total_cost"] = profitability_df["total_units_produced"] * production_df["cost_per_unit"].mean()
 profitability_df["profit"] = profitability_df["total_revenue"] - profitability_df["total_cost"]
+
+# Fill NaN values with 0 (handles missing values)
+profitability_df.fillna(0, inplace=True)
 
 # Store transformed data in PostgreSQL
 sales_summary.to_sql("sales_summary", engine, if_exists="replace", index=False)
