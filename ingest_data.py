@@ -3,9 +3,14 @@ import pandas as pd
 from sqlalchemy import create_engine
 from sqlalchemy.exc import OperationalError
 from sqlalchemy.sql import text  # Import text() for raw SQL queries
+import os
+from dotenv import load_dotenv
 
-# Use Railway PostgreSQL URL with SSL enabled
-DATABASE_URL = "***REMOVED***?sslmode=require"
+# Load environment variables
+load_dotenv()
+
+# Get database URL from environment variables
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 # Retry connecting to the database
 MAX_RETRIES = 3
@@ -13,7 +18,7 @@ for attempt in range(MAX_RETRIES):
     try:
         engine = create_engine(DATABASE_URL, pool_pre_ping=True)
         with engine.connect() as connection:
-            print("✅ Connected to PostgreSQL on Railway!")
+            print("✅ Connected to PostgreSQL database!")
         break  # Connection successful
     except OperationalError as e:
         print(f"⚠️ Database connection failed (Attempt {attempt + 1}/{MAX_RETRIES})")

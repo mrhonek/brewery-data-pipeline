@@ -6,8 +6,8 @@ import os
 
 st.set_page_config(page_title="Brewery Dashboard", layout="wide")
 
-# Set the correct port for Railway
-port = int(os.getenv("PORT", 5000))  # Use Railway's provided port or default to 5000
+# Set the default port or use environment variable
+port = int(os.getenv("PORT", 5000))  # Use provided port or default to 5000
 
 # Run Streamlit
 if __name__ == "__main__":
